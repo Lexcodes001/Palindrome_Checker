@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+:root{
+    --header: #fff;
+    --txt: #eee;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 2s ease;
+    /*background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);*/
+}
+
+.box{
+    width: 28rem;
+    padding: .5rem 2rem 1.5rem;
+    margin: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(2px);
+    transition: all .8s ease;
+}
+.box:hover{
+    gap: 2rem;
+    padding: 1rem 2rem 2rem;
+    border-radius: .8rem;
+    backdrop-filter: blur(7px);
+}
+
+.about h1 {
+    color: var(--header);
+}
+
+.about p{
+    color: var(--txt);
+}
+
+.checker{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.input{
+    width: auto;
+    height: 3.25rem;
+    position: relative;
+    border-radius: .5rem;
+    background-color: var(--header);
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .30);
+}
+
+.input img{
+    top: 50%;
+    position: absolute;
+    transform: translate(1rem, -50%);
+}
+
+.input #user-input{
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, .7);
+    padding-left: 3rem;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+#user-input::placeholder{
+    color: rgba(0, 0, 0, .5);
+}
+
+.checker #button{
+    width: 10rem;
+    height: 2rem;
+    opacity: .5;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    color: var(--txt);
+    font-weight: 900;
+    transition: all 1s ease;
+    background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+}
+
+#button:active{
+    transform: scale(.8);
+    background: linear-gradient(135deg, #2D5CFE 0%, #1798fb 100%);
+}
+
+#button.active{
+    opacity: 1;
+}
+
+.result{
+    display: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #000;
+    background-color: var(--txt);
+    width: fit-content;
+    padding: .5rem;
+    border-radius: 0 .7rem .7rem .7rem;
+}
+
+.result .txt{
+    color: #2D5CFE;
+    font-weight: 900;
+}
+
+.result .not{
+    color: firebrick;
+    font-weight: 900;
+}
+
+/*.result::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 25%;
+    border-width: .25rem;
+    border-style: solid;
+    border-color: transparent transparent var(--txt) transparent;
+}*/
