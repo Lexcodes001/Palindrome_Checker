@@ -93,6 +93,7 @@ body{
     opacity: .5;
     border: none;
     outline: none;
+    cursor: pointer;
     border-radius: .7rem;
     color: var(--txt);
     font-weight: 900;
