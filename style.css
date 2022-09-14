@@ -81,10 +81,13 @@ body{
     border: none;
     outline: none;
     font-size: 1.2rem;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 #user-input::placeholder{
     color: rgba(0, 0, 0, .5);
+    font-size: 1rem;
 }
 
 .checker #button{

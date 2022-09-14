@@ -53,3 +53,35 @@ function changeImage() {
 }
 
 setInterval(changeImage,5000);
+
+var i = 0, speed = 250, header = document.querySelector('.about h1'), txt1 = document.querySelector('.about .p1'), txt2 = document.querySelector('.about .p2'), headerTxt = 'Palindrome Checker', paraTxt1 = `A palindrome is a word, phrase or number that reads the same backwards as forwards, e.g. level, refer, 1881 etc.`, paraTxt2 = `Enter a word, phrase, or number below and click the button underneath to check if it's a palindrome.`;
+    function typingEffect() {
+        if (i <= headerTxt.length) {
+            header.innerHTML += headerTxt.charAt(i);
+            i++;
+            setTimeout(typingEffect, speed);
+        } else {
+            i = 0;
+            typeEffect();
+        }
+    }
+    function typeEffect() {
+        speed = 200;
+        if (i <= paraTxt1.length) {
+            txt1.innerHTML += paraTxt1.charAt(i);
+            i++;
+            setTimeout(typeEffect, speed);
+        } else {
+            i = 0;
+            typEffect();
+        }
+    }
+    function typEffect() {
+        speed = 200;
+        if (i <= paraTxt2.length) {
+            txt2.innerHTML += paraTxt2.charAt(i);
+            i++;
+            setTimeout(typEffect, speed);
+        }
+    }
+    typingEffect();
