@@ -61,9 +61,11 @@ body{
     width: auto;
     height: 3.25rem;
     position: relative;
+    display: none;
     border-radius: .5rem;
     background-color: var(--header);
     box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .30);
+    transition: all 1s ease;
 }
 
 .input img{
@@ -88,7 +90,7 @@ body{
 
 #user-input::placeholder{
     color: rgba(0, 0, 0, .5);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .checker #button{
@@ -97,11 +99,12 @@ body{
     opacity: .5;
     border: none;
     outline: none;
+    display: none;
     cursor: pointer;
     border-radius: .7rem;
     color: var(--txt);
     font-weight: 900;
-    transition: transform 1s ease;
+    transition: all 1s ease;
     background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
 }
 

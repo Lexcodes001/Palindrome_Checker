@@ -77,11 +77,14 @@ var i = 0, speed = 250, header = document.querySelector('.about h1'), txt1 = doc
         }
     }
     function typEffect() {
-        speed = 200;
+        speed = 150;
         if (i <= paraTxt2.length) {
             txt2.innerHTML += paraTxt2.charAt(i);
             i++;
             setTimeout(typEffect, speed);
+        } else {
+            inputBox.style.display = 'block';
+            checkBtn.style.display = 'block';
         }
     }
     typingEffect();
