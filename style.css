@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root{
     --header: #fff;
@@ -81,6 +81,7 @@ body{
     border: none;
     outline: none;
     font-size: 1.2rem;
+    font-weight: 900;
     word-wrap: break-word;
     text-overflow: ellipsis;
 }
@@ -100,7 +101,7 @@ body{
     border-radius: .7rem;
     color: var(--txt);
     font-weight: 900;
-    transition: all 1s ease;
+    transition: transform 1s ease;
     background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
 }
 
@@ -116,7 +117,7 @@ body{
 .result{
     display: none;
     font-size: .8rem;
-    font-weight: 600;
+    font-weight: 200;
     color: #000;
     background-color: var(--txt);
     width: fit-content;
@@ -127,10 +128,12 @@ body{
 .result .txt{
     color: #2D5CFE;
     font-weight: 900;
+    font-size: .9rem;
 }
 
 .result .not{
     color: firebrick;
+    font-size: .9rem;
     font-weight: 900;
 }
 
